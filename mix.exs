@@ -47,7 +47,7 @@ defmodule RemoteFileStreamer.MixProject do
   defp description() do
     """
     RemoteFileStreamer is a micro-library to stream a remote file.
-    Mostly, it provides a `stream` function taking a url as an input and returns a stream out of it.
+    It's similar to File.stream! but takes an url as input and returns a stream to consume.
     """
   end
 end
