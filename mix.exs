@@ -7,7 +7,9 @@ defmodule FileStreamer.MixProject do
       version: "0.1.0",
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      package: package()
+
     ]
   end
 
@@ -23,6 +25,14 @@ defmodule FileStreamer.MixProject do
     [
       {:httpoison, "~> 0.13.0"},
       {:cowboy, "~> 2.4", only: :test}
+    ]
+  end
+
+  defp package do
+    [
+      maintainers: ["Nicolas Charlery"],
+      licenses: ["MIT"],
+      links: %{"Civilcode Labs" => "http://labs.civilcode.io"}
     ]
   end
 end
