@@ -1,6 +1,6 @@
-defmodule FileStreamerTest do
+defmodule RemoteFileStreamerTest do
   use ExUnit.Case
-  doctest FileStreamer
+  doctest RemoteFileStreamer
 
   defmodule TestHandler do
     def init(req0, state) do
@@ -43,7 +43,7 @@ defmodule FileStreamerTest do
 
   describe "stream/1" do
     test "streams a remote url", %{expected_file_content: expected_file_content} do
-      stream = FileStreamer.stream("http://localhost:4005/remote_file")
+      stream = RemoteFileStreamer.stream("http://localhost:4005/remote_file")
 
       rebuilt_resource =
         stream

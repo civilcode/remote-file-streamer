@@ -1,6 +1,6 @@
-defmodule FileStreamer do
+defmodule RemoteFileStreamer do
   @moduledoc """
-  FileStreamer is a micro-library to stream a remote file.
+  RemoteFileStreamer is a micro-library to stream a remote file.
   Mostly, it provides a `stream` function taking a url as an input and returns a stream out of it.
   """
 
@@ -10,7 +10,7 @@ defmodule FileStreamer do
   ## Examples
 
   url
-  |> FileStream.stream
+  |> RemoteFileStream.stream
   |> Enum.each(fn(chunk) -> IO.puts chunk end)
 
   """

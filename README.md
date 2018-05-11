@@ -1,6 +1,6 @@
-# FileStreamer
+# RemoteFileStreamer
 
-FileStreamer is a micro-library to stream a remote file.
+RemoteFileStreamer is a micro-library to stream a remote file.
 Mostly, it provides a `stream` function taking a url as an input and returns a stream out of it.
 
 ## Installation

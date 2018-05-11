@@ -1,12 +1,12 @@
-defmodule FileStreamer.MixProject do
+defmodule RemoteFileStreamer.MixProject do
   use Mix.Project
 
   @version "0.1.0"
-  @project_url "https://github.com/civilcode/file_streamer"
+  @project_url "https://github.com/civilcode/remote_file_streamer"
 
   def project do
     [
-      app: :file_streamer,
+      app: :remote_file_streamer,
       version: @version,
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
@@ -36,9 +36,9 @@ defmodule FileStreamer.MixProject do
       maintainers: ["Nicolas Charlery"],
       licenses: ["MIT"],
       links: %{
-        "GitHub" => "https://github.com/civilcode/file_streamer",
+        "GitHub" => "https://github.com/civilcode/remote_file_streamer",
         "Civilcode Labs" => "http://labs.civilcode.io"
-      }
+      },
       source_url: @project_url,
       homepage_url: @project_url
     ]
@@ -46,7 +46,7 @@ defmodule FileStreamer.MixProject do
 
   defp description() do
     """
-    FileStreamer is a micro-library to stream a remote file.
+    RemoteFileStreamer is a micro-library to stream a remote file.
     Mostly, it provides a `stream` function taking a url as an input and returns a stream out of it.
     """
   end

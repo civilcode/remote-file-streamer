@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure your application as:
 #
-#     config :file_streamer, key: :value
+#     config :remote_file_streamer, key: :value
 #
 # and access this configuration in your application as:
 #
-#     Application.get_env(:file_streamer, :key)
+#     Application.get_env(:remote_file_streamer, :key)
 #
 # You can also configure a 3rd-party app:
 #
