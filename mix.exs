@@ -2,6 +2,7 @@ defmodule FileStreamer.MixProject do
   use Mix.Project
 
   @version "0.1.0"
+  @project_url "https://github.com/civilcode/file_streamer"
 
   def project do
     [
@@ -38,6 +39,8 @@ defmodule FileStreamer.MixProject do
         "GitHub" => "https://github.com/civilcode/file_streamer",
         "Civilcode Labs" => "http://labs.civilcode.io"
       }
+      source_url: @project_url,
+      homepage_url: @project_url
     ]
   end
 
