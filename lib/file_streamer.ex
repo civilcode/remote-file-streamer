@@ -6,7 +6,6 @@ defmodule FileStreamer do
 
   @doc """
   If the server hosting the resource allows it, a file a streamed from a url
-  Hello world.
 
   ## Examples
 
