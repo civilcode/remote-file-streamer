@@ -1,6 +1,7 @@
 # FileStreamer
 
-**TODO: Add description**
+FileStreamer is a micro-library to stream a remote file.
+Mostly, it provides a `stream` function taking a url as an input and returns a stream out of it.
 
 ## Installation
 
@@ -18,4 +19,3 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/file_streamer](https://hexdocs.pm/file_streamer).
-
