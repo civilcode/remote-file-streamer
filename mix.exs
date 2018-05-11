@@ -27,7 +27,8 @@ defmodule RemoteFileStreamer.MixProject do
   defp deps() do
     [
       {:httpoison, "~> 0.11"},
-      {:cowboy, "~> 2.4", only: :test}
+      {:cowboy, "~> 2.4", only: :test},
+      {:mix_test_watch, "~> 0.6", only: :dev, runtime: false}
     ]
   end
 
