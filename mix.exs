@@ -26,7 +26,7 @@ defmodule RemoteFileStreamer.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps() do
     [
-      {:httpoison, "~> 0.13.0"},
+      {:httpoison, "~> 0.11"},
       {:cowboy, "~> 2.4", only: :test}
     ]
   end
