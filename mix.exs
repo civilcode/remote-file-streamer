@@ -34,7 +34,10 @@ defmodule FileStreamer.MixProject do
     [
       maintainers: ["Nicolas Charlery"],
       licenses: ["MIT"],
-      links: %{"Civilcode Labs" => "http://labs.civilcode.io"}
+      links: %{
+        "GitHub" => "https://github.com/civilcode/file_streamer",
+        "Civilcode Labs" => "http://labs.civilcode.io"
+      }
     ]
   end
 
