@@ -1,10 +1,12 @@
 defmodule FileStreamer.MixProject do
   use Mix.Project
 
+  @version "0.1.0"
+
   def project do
     [
       app: :file_streamer,
-      version: "0.1.0",
+      version: @version,
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
