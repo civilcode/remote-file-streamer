@@ -2,10 +2,11 @@
 
 RemoteFileStreamer is a micro-library to stream a remote file.
 Mostly, it provides a `stream` function taking a url as an input and returns a stream out of it.
+If the server hosting the resource allows it, a file a streamed from a url
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+The package is [available in Hex](https://hex.pm/docs/publish), and can be installed
 by adding `file_streamer` to your list of dependencies in `mix.exs`:
 
 ```elixir
@@ -16,6 +17,12 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/file_streamer](https://hexdocs.pm/file_streamer).
+## Examples
+
+The following example will stream the content from the file located in the url, and consume the stream by outputing every chunks composing the resource:
+
+```
+  url
+  |> RemoteFileStream.stream
+  |> Enum.each(fn(chunk) -> IO.puts chunk end)
+```  
