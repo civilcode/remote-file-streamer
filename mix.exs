@@ -33,7 +33,8 @@ defmodule RemoteFileStreamer.MixProject do
     [
       {:httpoison, "~> 0.11"},
       {:cowboy, "~> 2.4", only: :test},
-      {:mix_test_watch, "~> 0.6", only: :dev, runtime: false}
+      {:mix_test_watch, "~> 0.6", only: :dev, runtime: false},
+      {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
 
