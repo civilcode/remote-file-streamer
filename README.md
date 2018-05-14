@@ -26,3 +26,6 @@ The following example will stream the content from the file located in the url, 
   |> RemoteFileStream.stream
   |> Enum.each(fn(chunk) -> IO.puts chunk end)
 ```  
+
+# Documentation
+A usage of the library is described in [this blogpost](http://labs.civilcode.io/elixir/2018/05/03/stream-files.html).
