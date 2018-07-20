@@ -1,8 +1,8 @@
 defmodule RemoteFileStreamer.MixProject do
   use Mix.Project
 
-  @version "0.1.0"
-  @project_url "https://github.com/civilcode/remote_file_streamer"
+  @version "1.0.0"
+  @project_url "https://github.com/civilcode/remote-file-streamer"
 
   def project do
     [
@@ -43,7 +43,7 @@ defmodule RemoteFileStreamer.MixProject do
       maintainers: ["Nicolas Charlery"],
       licenses: ["MIT"],
       links: %{
-        "GitHub" => "https://github.com/civilcode/remote_file_streamer",
+        "GitHub" => "https://github.com/civilcode/remote-file-streamer",
         "Civilcode Labs" => "http://labs.civilcode.io"
       },
       source_url: @project_url,
