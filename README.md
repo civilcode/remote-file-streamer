@@ -12,7 +12,7 @@ by adding `file_streamer` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:file_streamer, "~> 0.1.0"}
+    {:remote_file_streamer, "~> 1.0"}
   ]
 end
 ```
