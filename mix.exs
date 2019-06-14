@@ -1,7 +1,7 @@
 defmodule RemoteFileStreamer.MixProject do
   use Mix.Project
 
-  @version "1.0.0"
+  @version "1.0.1"
   @project_url "https://github.com/civilcode/remote-file-streamer"
 
   def project do
@@ -31,8 +31,8 @@ defmodule RemoteFileStreamer.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps() do
     [
-      {:httpoison, "~> 0.11"},
-      {:cowboy, "~> 2.4", only: :test},
+      {:httpoison, ">= 0.0.0"},
+      {:cowboy, ">= 2.0.0", only: :test},
       {:mix_test_watch, "~> 0.6", only: :dev, runtime: false},
       {:ex_doc, ">= 0.0.0", only: :dev}
     ]

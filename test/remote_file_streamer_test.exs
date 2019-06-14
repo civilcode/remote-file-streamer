@@ -3,7 +3,7 @@ defmodule RemoteFileStreamerTest do
   doctest RemoteFileStreamer
 
   setup_all do
-    file_path = "#{System.cwd()}/test/fixtures/emacs.png"
+    file_path = "#{File.cwd!()}/test/fixtures/emacs.png"
 
     listener = ChunkServer.start(4006, "/remote_file", file_path)
 
